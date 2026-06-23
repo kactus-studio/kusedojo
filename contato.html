@@ -185,14 +185,14 @@
                 </div>
                 <div class="col-lg-6">
                     <div class="leave-comment">
-                        <form action="https://formsubmit.co/kusedojo@gmail.com" method="POST">
-                            <input type="hidden" name="_captcha" value="true">
-  				            <input type="hidden" name="_next" value="https://www.kusedojo.com.br/">
-					        <input type="hidden" name="_subject" value="Contato - Kuse Dojô Site">
-                            <input type="text" placeholder="Nome">
-                            <input type="email" placeholder="Email">
-                            <input type="phone" placeholder="Whatsapp">
-                            <textarea placeholder="Mensagem"></textarea>
+                        <!-- <form action="https://formsubmit.co/kusedojo@gmail.com" method="POST"> -->
+                        <form action="https://api.staticforms.dev/submit" method="POST">
+                            <input type="hidden" name="apiKey" value="sf_f0802977ee32399510bade70">
+					        <input type="hidden" name="_subject" value="Contato Site - Kuse Dojô">
+                            <input type="text" placeholder="Nome" required>
+                            <input type="email" placeholder="Email" required>
+                            <input type="phone" placeholder="Whatsapp" required>
+                            <textarea placeholder="Mensagem" required></textarea>
                             <button type="submit">Enviar</button>
                         </form>
                     </div>
@@ -204,6 +204,8 @@
         </div>
     </section>
     <!-- Contact Section End -->
+
+    <!-- <script src="https://web3forms.com/client/script.js" async defer></script> -->
 
     <!-- Get In Touch Section Begin -->
     <div class="gettouch-section">
